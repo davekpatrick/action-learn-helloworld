@@ -10,7 +10,7 @@ jobs:
     steps:
       - name: Run greeting
         id: hello
-        uses: davekpatrick/actions-learn-helloworld@0.1.4
+        uses: davekpatrick/actions-learn-helloworld@0.1.5
         with:
           greetingType: 'Hello'
       # Use the output from the action
