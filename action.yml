@@ -15,7 +15,7 @@ outputs:
 ## ------------------------------
 runs:
   using: 'docker'
-  image: 'docker/Dockerfile'
+  image: 'docker/DockerFile'
   args:
     - ${{ inputs.greetingType }}
 # EOF
