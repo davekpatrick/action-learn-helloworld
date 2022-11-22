@@ -16,6 +16,6 @@ The super cool greeting
 
 ## Example usage
 
-uses: davekpatrick/actions-learn-helloworld@v0.1.0
+uses: davekpatrick/actions-learn-helloworld@0.1.0
 with:
   greetingType: 'Hello'

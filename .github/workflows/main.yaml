@@ -1,0 +1,15 @@
+on: [push]
+
+jobs:
+  helloWorld:
+    runs-on: ubuntu-latest
+    name: Run Greeting
+    steps:
+      - name: Run greeting
+        id: hello
+        uses: davekpatrick/actions-learn-helloworld@0.1.0
+        with:
+          greetingType: 'Hello'
+      # Use the output from the action
+      - name: Print greeting
+        run: echo "${{ steps.hello.outputs.greetingMessage }}"
