@@ -1,0 +1,21 @@
+# BOF 
+name: 'Hello World'
+author: davekpatrick
+description: 'A simple introductory action'
+#
+inputs:
+  greetingType:  # id of input
+    description: 'Type of greeting to execute'
+    required: false
+    default: 'Hello'
+#
+outputs:
+  greetingMessage: # id of output
+    description: 'The docker returned greeting'
+## ------------------------------
+runs:
+  using: 'docker'
+  image: 'docker/Dockerfile'
+  args:
+    - ${{ inputs.greetingType }}
+# EOF
